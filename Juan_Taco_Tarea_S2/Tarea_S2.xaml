@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Juan_Taco_Tarea_S2.Tarea_S2">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+                <Label Text="Tarea Semana 2" HorizontalOptions="CenterAndExpand" FontSize="20"/>
+                <Label HorizontalOptions="CenterAndExpand" Text="Notas Noveno B" FontSize="20" TextColor="Blue"/>
+                <Label Text="Parcial 1"  FontSize="20" TextColor="Brown"></Label>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" Grid.Row="0" Text="Nota Seguimiento"></Label>
+                    <Entry Grid.Column="1" Grid.Row="0" x:Name="txtNotaUno" Keyboard="Numeric"/>
+                    
+                    <Label Grid.Column="0" Grid.Row="1" Text="Nota examen"></Label>
+                    <Entry Grid.Column="1" Grid.Row="1" x:Name="txtNotaExaUno" Keyboard="Numeric"/>
+
+                    <Label Grid.Column="0" Grid.Row="2" Text="Nota Primer Parcial" FontSize="18"></Label>
+                    <Label Grid.Column="1" Grid.Row="2" x:Name="txtDatoResultadoUno" FontSize="18" />
+                </Grid>
+
+                <Label Text="Parcial 2" FontSize="20" TextColor="Brown"></Label>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" Grid.Row="0" Text="Nota Seguimiento"></Label>
+                    <Entry Grid.Column="1" Grid.Row="0" x:Name="txtNotaDos" Keyboard="Numeric"/>
+                    <Label Grid.Column="0" Grid.Row="1" Text="Nota examen"></Label>
+                    <Entry Grid.Column="1" Grid.Row="1" x:Name="txtNotaExaDos" Keyboard="Numeric"/>
+                    <Label Grid.Column="0" Grid.Row="2" Text="Nota Segundo Parcial" FontSize="18"></Label>
+                    <Label Grid.Column="1" Grid.Row="2" x:Name="txtDatoResultadoDos"  FontSize="18"/>
+                </Grid>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>                        
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" Grid.Row="0" Text="Nota Final" FontSize="18"></Label>
+                    <Label Grid.Column="1" Grid.Row="0" x:Name="txtNotaFinal" FontSize="18"/>
+                    </Grid>
+                <Button x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked"/>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
