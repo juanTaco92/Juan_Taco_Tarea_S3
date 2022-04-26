@@ -10,7 +10,7 @@ namespace Juan_Taco_Tarea_S2
         {
             InitializeComponent();
 
-            MainPage = new Tarea_S2();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()

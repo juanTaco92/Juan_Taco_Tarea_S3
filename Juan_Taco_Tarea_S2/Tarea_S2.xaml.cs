@@ -12,9 +12,11 @@ namespace Juan_Taco_Tarea_S2
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Tarea_S2 : ContentPage
     {
-        public Tarea_S2()
+        public Tarea_S2(String usuario, string password)
         {
             InitializeComponent();
+            lblUser.Text = usuario;
+            lblPass.Text = password;
         }
 
         private void btnCalcular_Clicked(object sender, EventArgs e)

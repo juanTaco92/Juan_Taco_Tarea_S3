@@ -14,5 +14,25 @@ namespace Juan_Taco_Tarea_S2
         {
             InitializeComponent();
         }
+
+        private async void btnAbrir_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                string usuario = txtUsuario.Text;
+                string password = txtPassword.Text;
+                if (txtUsuario.Text == "estudiante2021" && txtPassword.Text== "uisrael2021") {
+                    await Navigation.PushAsync(new Tarea_S2(usuario, password));
+                }
+                else
+                {
+                    DisplayAlert("ALERTA", "Usuario o Password Incorrectos" , "Cerrar");
+                }
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("ERROR", ex.Message, "Cerrar");
+            }
+        }
     }
 }

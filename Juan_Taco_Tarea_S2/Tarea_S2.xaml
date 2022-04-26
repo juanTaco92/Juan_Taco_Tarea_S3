@@ -4,10 +4,14 @@
              x:Class="Juan_Taco_Tarea_S2.Tarea_S2">
     <ContentPage.Content>
         <ScrollView>
-        <StackLayout>
-                <Label Text="Tarea Semana 2" HorizontalOptions="CenterAndExpand" FontSize="20"/>
+            <StackLayout>
+                <Label Text="Bienvenido Usuario: " HorizontalTextAlignment="End"></Label>
+                <Label x:Name="lblUser" TextColor="BurlyWood" HorizontalTextAlignment="End"/>
+                <Label Text="Su contraseña es: " HorizontalTextAlignment="End"/>
+                <Label x:Name="lblPass" TextColor="BurlyWood" HorizontalTextAlignment="End"/>
+                <Label Text="Tarea Semana 3" HorizontalOptions="CenterAndExpand" FontSize="20"/>
                 <Label HorizontalOptions="CenterAndExpand" Text="Notas Noveno B" FontSize="20" TextColor="Blue"/>
-                <Label Text="Parcial 1"  FontSize="20" TextColor="Brown"></Label>
+                <Label Text="Parcial 1"  FontSize="20" TextColor="Brown"></Label>                         
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition></RowDefinition>
