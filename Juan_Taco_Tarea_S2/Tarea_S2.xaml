@@ -5,6 +5,7 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
+                
                 <Label Text="Bienvenido Usuario: " HorizontalTextAlignment="End"></Label>
                 <Label x:Name="lblUser" TextColor="BurlyWood" HorizontalTextAlignment="End"/>
                 <Label Text="Su contraseña es: " HorizontalTextAlignment="End"/>

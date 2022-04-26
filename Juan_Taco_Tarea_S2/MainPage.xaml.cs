@@ -22,6 +22,7 @@ namespace Juan_Taco_Tarea_S2
                 string usuario = txtUsuario.Text;
                 string password = txtPassword.Text;
                 if (txtUsuario.Text == "estudiante2021" && txtPassword.Text== "uisrael2021") {
+                    DisplayAlert("Bienvenido", txtUsuario.Text, "Cerrar");
                     await Navigation.PushAsync(new Tarea_S2(usuario, password));
                 }
                 else
